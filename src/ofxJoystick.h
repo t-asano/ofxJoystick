@@ -1,7 +1,11 @@
-﻿
 #pragma once
 #include "ofMain.h"
 
+#if (_MSC_VER)
+#include <GLFW/glfw3.h>
+#else
+#include "GLFW/glfw3.h"
+#endif
 
 class ofxJoystick {
 private:
